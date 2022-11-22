@@ -8,3 +8,5 @@ jobs:
   build:
     uses: dyne/workflows/.github/workflows/node-staging-deploy.yml@main
     secrets: inherit
+    with:
+      deploy_url: https://luigi.dyne.org
