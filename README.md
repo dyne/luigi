@@ -1,6 +1,15 @@
 <p align="center">
-  <a href="https://www.dyne.org">
-    <img alt="Luigi van der Dyne" src="https://via.placeholder.com/150.png?text=LOGO" width="150" />
+  <a href="https://luigi.dyne.org">
+    <pre>
+────▄████▄▄
+───▄▀█▀▐└─┐ 
+───█▄▐▌▄█▄┘ 
+───└▄▄▄▄─┘ 
+▄███▒██▒███▄ 
+▒▒█▄▒▒▒▒▄█▒▒ 
+──▒▒▒▀▀▒▒▒ 
+▄███────███▄ 
+    </pre>
   </a>
 </p>
 
