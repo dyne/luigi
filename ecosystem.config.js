@@ -6,7 +6,7 @@ module.exports = {
       autorestart: true,
       max_restarts: 50,
       script: "yarn",
-      args: "start",
+      args: "serve",
       exec_mode: "cluster",
       instances: 0,
       listen_timeout: 12000,
