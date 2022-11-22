@@ -126,7 +126,7 @@ Now that you defined the inputs you can replace the variable name you decided fo
 ***
 ## 😍 Acknowledgements
 
-[![software by Dyne.org](https://files.dyne.org/software_by_dyne.png)](http://www.dyne.org)
+<img alt="software by Dyne.org" src="https://files.dyne.org/software_by_dyne.png" width="150" />
 
 Copyleft (ɔ) 2022 by [Dyne.org](https://www.dyne.org) foundation, Amsterdam
 
