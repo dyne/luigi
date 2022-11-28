@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2022 Dyne.org foundation
+# SPDX-FileCopyrightText: 2022 Puria Nafisi Azizi <puria@dyne.org>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 name: 🚀 Baloo deploy
 
 on:
@@ -5,6 +10,13 @@ on:
     branches: [ "main" ]
 
 jobs:
+  reuse:
+    name: 🚨 REUSE Compliance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: fsfe/reuse-action@v1
+
   build:
     uses: dyne/workflows/.github/workflows/node-staging-deploy.yml@main
     secrets: inherit
