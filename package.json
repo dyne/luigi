@@ -12,7 +12,8 @@
     "@mechanic-design/cli": "2.0.0-beta.9",
     "@mechanic-design/core": "2.0.0-beta.9",
     "@mechanic-design/engine-react": "^2.0.0-beta.9",
-    "@mechanic-design/engine-svg": "^2.0.0-beta.9",
-    "@svgdotjs/svg.js": "^3.1.2"
+    "@mechanic-design/engine-svg": "2.0.0-beta.9",
+    "@svgdotjs/svg.js": "^3.1.2",
+    "react-webcam": "^7.0.1"
   }
 }

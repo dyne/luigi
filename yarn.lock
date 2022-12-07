@@ -1128,7 +1128,7 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@mechanic-design/cli@^2.0.0-beta.9":
+"@mechanic-design/cli@2.0.0-beta.9":
   version "2.0.0-beta.9"
   resolved "https://registry.yarnpkg.com/@mechanic-design/cli/-/cli-2.0.0-beta.9.tgz#be97793dc3fdab0cd16d14b7ae57732e1437829d"
   integrity sha512-MSvn2Xe6TOMIWr0XtEi0wQcpkHEYOw7w2dWusGbUloc4io7HkgYdoUZ+kiHDl1ochT3DsIdUkVYlB2SNucu4tg==
@@ -1139,7 +1139,7 @@
     resolve-cwd "^3.0.0"
     yargs "^17.0.1"
 
-"@mechanic-design/core@^2.0.0-beta.9":
+"@mechanic-design/core@2.0.0-beta.9", "@mechanic-design/core@^2.0.0-beta.9":
   version "2.0.0-beta.9"
   resolved "https://registry.yarnpkg.com/@mechanic-design/core/-/core-2.0.0-beta.9.tgz#491c1f0a2415b2864d434850d5d47d65a07e6008"
   integrity sha512-0sPRs9Rx3/k90QcPwRitZwBxq1XkBeNS7Cu7n9n9mFmAeALB+W1rrtckifgRIFdVIqXoWKeBjUqnDlrVQsZaDw==
@@ -4493,6 +4493,11 @@ react-router@5.3.4, react-router@^5.2.0:
     react-is "^16.6.0"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
+
+react-webcam@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/react-webcam/-/react-webcam-7.0.1.tgz#8249e1d621eb4bba7e3f52135f562439d0528df3"
+  integrity sha512-8E/Eb/7ksKwn5QdLn67tOR7+TdP9BZdu6E5/DSt20v8yfW/s0VGBigE6VA7R4278mBuBUowovAB3DkCfVmSPvA==
 
 react@^17.0.2:
   version "17.0.2"
