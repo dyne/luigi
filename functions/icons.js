@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2023 Dyne.org foundation
+// SPDX-FileCopyrightText: 2023 Puria Nafisi Azizi <puria@dyne.org>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import React from 'react'
 
 export const Freebsd = () => (<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

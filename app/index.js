@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2023 Dyne.org foundation
+// SPDX-FileCopyrightText: 2023 Puria Nafisi Azizi <puria@dyne.org>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import React from "react";
 
 export const SideBar = ({ children }) => {
