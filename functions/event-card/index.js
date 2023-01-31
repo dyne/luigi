@@ -5,6 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 import '@fontsource/syne';
+import { COLOR_PRESETS, SETTINGS } from '../commons';
 
 export const handler = ({ inputs, mechanic }) => {
   const {
@@ -371,43 +372,8 @@ export const inputs = {
   },
 };
 
-export const presets = {
-  ['Open source']: {
-    color: '#FFEEDD',
-    secondary: '#F6D6B0',
-    text_color: '#000000',
-  },
-  Cybersecurity: {
-    color: '#D6D6D6',
-    secondary: '#F0F0F0',
-    text_color: '#000000',
-  },
-  Art: {
-    color: '#8980F5',
-    secondary: '#FDF5EB',
-    text_color: '#FFFFFF',
-  },
-  Crypto: {
-    color: '#000000',
-    secondary: '#DBDDE0',
-    text_color: '#FFFFFF',
-  },
-  ['Circular economy']: {
-    color: '#21897E',
-    secondary: '#2E9E91',
-    text_color: '#FFFFFF',
-  },
-};
-
-export const settings = {
-  engine: require('@mechanic-design/engine-react'),
-  showMultipleExports: true,
-  hideFeedback: true,
-  hideScaleToFit: true,
-  hideAutoRefresh: true,
-  hideGenerate: true,
-};
-
+export const presets = COLOR_PRESETS;
+export const settings = SETTINGS;
 export const ExtraUI = (props) => {
   const { values, onChange } = props;
 
