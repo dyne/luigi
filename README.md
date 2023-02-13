@@ -1,6 +1,6 @@
 <!--
-SPDX-FileCopyrightText: 2022 Dyne.org foundation
-SPDX-FileCopyrightText: 2022 Puria Nafisi Azizi <puria@dyne.org>
+SPDX-FileCopyrightText: 2023 Dyne.org foundation
+SPDX-FileCopyrightText: 2023 Puria Nafisi Azizi <puria@dyne.org>
 
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
