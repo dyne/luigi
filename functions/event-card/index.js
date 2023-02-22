@@ -3,9 +3,9 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import React, { useEffect, useState } from 'react';
-import '@fontsource/syne';
-import { COLOR_PRESETS, SETTINGS } from '../commons';
+import React, { useEffect, useState } from "react";
+import "@fontsource/syne";
+import { COLOR_PRESETS, SETTINGS } from "../commons";
 
 export const handler = ({ inputs, mechanic }) => {
   const {
@@ -20,11 +20,12 @@ export const handler = ({ inputs, mechanic }) => {
     first_profile,
     second_profile,
     color,
+    accent,
     interval,
   } = inputs;
 
-  const [firstProfileHref, setFirstProfileHref] = useState('');
-  const [secondProfileHref, setSecondProfileHref] = useState('');
+  const [firstProfileHref, setFirstProfileHref] = useState("");
+  const [secondProfileHref, setSecondProfileHref] = useState("");
 
   const loadImageFromFileObject = (fileObject, stateSetter) => {
     const reader = new FileReader();
@@ -59,15 +60,8 @@ export const handler = ({ inputs, mechanic }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        id="Twitter post - 64"
-        clipPath="url(#clip0_876_847)"
-      >
-        <rect
-          width="1200"
-          height="675"
-          fill={color}
-        />
+      <g id="Twitter post - 64" clipPath="url(#clip0_876_847)">
+        <rect width="1200" height="675" fill={color} />
         <path
           id="Rectangle 87"
           opacity="0.3"
@@ -77,21 +71,18 @@ export const handler = ({ inputs, mechanic }) => {
         <path
           id="Rectangle 87_2"
           d="M1200 565H392C331.249 565 282 614.249 282 675V675H1200V565Z"
-          fill={'#FFEEDD'}
+          fill={accent}
         />
         <text
           id="date"
-          fill={'black'}
+          fill={color}
           xmlSpace="preserve"
-          style={{ whiteSpace: 'pre' }}
+          style={{ whiteSpace: "pre" }}
           fontFamily="Syne"
           fontSize="40"
           letterSpacing="-0.02em"
         >
-          <tspan
-            x="362.312"
-            y="639"
-          >
+          <tspan x="362.312" y="639">
             {location} / {date}
           </tspan>
         </text>
@@ -100,29 +91,26 @@ export const handler = ({ inputs, mechanic }) => {
             <path
               id="Vector"
               d="M790.843 621.278H780.039C779.854 621.278 779.702 621.43 779.702 621.616V623.642C779.702 623.827 779.854 623.979 780.039 623.979H790.843C791.029 623.979 791.181 623.827 791.181 623.642V621.616C791.181 621.43 791.029 621.278 790.843 621.278ZM785.188 627.018H780.039C779.854 627.018 779.702 627.17 779.702 627.355V629.381C779.702 629.567 779.854 629.719 780.039 629.719H785.188C785.374 629.719 785.526 629.567 785.526 629.381V627.355C785.526 627.17 785.374 627.018 785.188 627.018ZM771.105 617.501H769.278C769.016 617.501 768.805 617.712 768.805 617.974V628.44C768.805 628.592 768.877 628.731 768.999 628.82L775.283 633.403C775.494 633.555 775.79 633.513 775.942 633.302L777.026 631.821V631.816C777.178 631.605 777.132 631.31 776.921 631.158L771.573 627.292V617.974C771.578 617.712 771.362 617.501 771.105 617.501V617.501Z"
-              fill={'black'}
+              fill={color}
             />
             <path
               id="Vector_2"
               d="M784.927 632.331H782.487C782.251 632.331 782.027 632.454 781.901 632.656C781.365 633.504 780.74 634.289 780.023 635.007C778.786 636.243 777.347 637.214 775.747 637.889C774.089 638.59 772.329 638.944 770.514 638.944C768.695 638.944 766.935 638.59 765.281 637.889C763.681 637.214 762.242 636.243 761.006 635.007C759.769 633.77 758.799 632.331 758.123 630.732C757.423 629.077 757.068 627.317 757.068 625.499C757.068 623.68 757.423 621.924 758.123 620.265C758.799 618.666 759.769 617.227 761.006 615.99C762.242 614.754 763.681 613.783 765.281 613.108C766.935 612.407 768.699 612.053 770.514 612.053C772.333 612.053 774.093 612.407 775.747 613.108C777.347 613.783 778.786 614.754 780.023 615.99C780.74 616.708 781.365 617.493 781.901 618.341C782.027 618.543 782.251 618.666 782.487 618.666H784.927C785.218 618.666 785.403 618.362 785.273 618.105C782.521 612.631 776.942 609.073 770.713 609.001C761.592 608.887 754.017 616.353 754 625.465C753.983 634.593 761.381 642 770.51 642C776.819 642 782.491 638.43 785.273 632.893C785.403 632.635 785.214 632.331 784.927 632.331V632.331Z"
-              fill={'black'}
+              fill={color}
             />
           </g>
           <text
             id="21:30 - 22:30 GMT +2"
-            fill={'black'}
+            fill={color}
             xmlSpace="preserve"
-            style={{ whiteSpace: 'pre' }}
+            style={{ whiteSpace: "pre" }}
             fontFamily="Syne"
             fontSize="40"
             letterSpacing="-0.02em"
           >
-            <tspan
-              x="807"
-              y="635"
-            >
-              {' '}
-              {interval}{' '}
+            <tspan x="807" y="635">
+              {" "}
+              {interval}{" "}
             </tspan>
           </text>
         </g>
@@ -135,16 +123,13 @@ export const handler = ({ inputs, mechanic }) => {
           id="The triple ai podcast"
           fill={text_color}
           xmlSpace="preserve"
-          style={{ whiteSpace: 'pre' }}
+          style={{ whiteSpace: "pre" }}
           fontFamily="Syne"
           fontSize="24"
           fontWeight="500"
           letterSpacing="-0.02em"
         >
-          <tspan
-            x="59"
-            y="111.3"
-          >
+          <tspan x="59" y="111.3">
             {format.toUpperCase()}
           </tspan>
         </text>
@@ -155,12 +140,12 @@ export const handler = ({ inputs, mechanic }) => {
           width="333"
           height="183"
           rx="91.5"
-          fill="#FFEEDD"
+          fill={accent}
         />
         <g id="Mask group">
           <mask
             id="mask0_876_847"
-            style={{ maskType: 'alpha' }}
+            style={{ maskType: "alpha" }}
             maskUnits="userSpaceOnUse"
             x="219"
             y="358"
@@ -197,7 +182,7 @@ export const handler = ({ inputs, mechanic }) => {
         <g id="Mask group_2">
           <mask
             id="mask1_876_847"
-            style={{ maskType: 'alpha' }}
+            style={{ maskType: "alpha" }}
             maskUnits="userSpaceOnUse"
             x="88"
             y="358"
@@ -227,28 +212,19 @@ export const handler = ({ inputs, mechanic }) => {
           id="Technology, Mindfulness, Decentralization: Visions of Smart Cities"
           fill={text_color}
           xmlSpace="preserve"
-          style={{ whiteSpace: 'pre' }}
+          style={{ whiteSpace: "pre" }}
           fontFamily="Syne"
           fontSize="48"
           fontWeight="500"
           letterSpacing="0em"
         >
-          <tspan
-            x="59"
-            y="178.6"
-          >
-            {line_1}{' '}
+          <tspan x="59" y="178.6">
+            {line_1}{" "}
           </tspan>
-          <tspan
-            x="59"
-            y="232.6"
-          >
+          <tspan x="59" y="232.6">
             {line_2}
           </tspan>
-          <tspan
-            x="59"
-            y="286.6"
-          >
+          <tspan x="59" y="286.6">
             {line_3}
           </tspan>
         </text>
@@ -288,11 +264,7 @@ export const handler = ({ inputs, mechanic }) => {
           />
         </pattern>
         <clipPath id="clip0_876_847">
-          <rect
-            width="1200"
-            height="675"
-            fill="white"
-          />
+          <rect width="1200" height="675" fill="white" />
         </clipPath>
         <image
           id="first_image"
@@ -316,58 +288,64 @@ export const handler = ({ inputs, mechanic }) => {
 
 export const inputs = {
   format: {
-    type: 'text',
-    default: 'THE TRIPLE AI PODCAST',
+    type: "text",
+    default: "THE TRIPLE AI PODCAST",
   },
   line_1: {
-    type: 'text',
-    default: 'Technology, Mindfulness,',
+    type: "text",
+    default: "Technology, Mindfulness,",
   },
   line_2: {
-    type: 'text',
-    default: 'Decentralization:',
+    type: "text",
+    default: "Decentralization:",
   },
   line_3: {
-    type: 'text',
-    default: 'Visions of Smart Cities',
+    type: "text",
+    default: "Visions of Smart Cities",
   },
   location: {
-    type: 'text',
-    default: 'Twitterspace',
+    type: "text",
+    default: "Twitterspace",
   },
   date: {
-    type: 'text',
-    default: new Date().toLocaleDateString('en-US', {
-      day: 'numeric',
-      month: 'short',
+    type: "text",
+    default: new Date().toLocaleDateString("en-US", {
+      day: "numeric",
+      month: "short",
     }),
   },
   interval: {
-    type: 'text',
-    default: '21:30 - 22:30 GMT +2',
+    type: "text",
+    default: "21:30 - 22:30 GMT +2",
   },
   first_profile: {
-    type: 'image',
+    type: "image",
   },
   second_profile: {
-    type: 'image',
+    type: "image",
   },
   color: {
-    type: 'color',
-    model: 'hex',
-    default: '#FFEEDD',
+    type: "color",
+    model: "hex",
+    default: "#FFEEDD",
     editable: false,
   },
   text_color: {
-    type: 'color',
-    model: 'hex',
-    default: '#000000',
+    type: "color",
+    model: "hex",
+    default: "#000000",
     editable: false,
   },
   secondary: {
-    type: 'color',
-    model: 'hex',
-    default: '#F6D6B0',
+    type: "color",
+    model: "hex",
+    default: "#F6D6B0",
+    editable: false,
+  },
+  accent: {
+    type: "color",
+    model: "hex",
+    default: "#FFEEDD",
     editable: false,
   },
 };

@@ -11,6 +11,7 @@ export const handler = ({ inputs, mechanic }) => {
   const {
     color,
     text_color,
+    secondary,
     accent,
     title,
     weight,
@@ -82,7 +83,7 @@ export const handler = ({ inputs, mechanic }) => {
           <tspan x={91} y={332}>
             {claim}
           </tspan>
-          <tspan x={91} y={380}>
+          <tspan x={91} y={380} fill={secondary}>
             {punchline}
           </tspan>
         </text>

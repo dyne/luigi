@@ -8,31 +8,31 @@ export const COLOR_PRESETS = {
     color: "#FFEEDD",
     secondary: "#F6D6B0",
     text_color: "#000000",
-    accent: "#F6D6B0",
+    accent: "#21897E",
   },
   Cybersecurity: {
     color: "#D6D6D6",
     secondary: "#F0F0F0",
     text_color: "#000000",
-    accent: "#F0F0F0",
+    accent: "#8980F5",
   },
   Art: {
     color: "#8980F5",
-    secondary: "#FDF5EB",
+    secondary: "#433CB8",
     text_color: "#FFFFFF",
-    accent: "#433CB8",
+    accent: "#FFEEDD",
   },
   Crypto: {
     color: "#000000",
     secondary: "#DBDDE0",
     text_color: "#FFFFFF",
-    accent: "#DBDDE0",
+    accent: "#FFEEDD",
   },
   ["Circular economy"]: {
     color: "#21897E",
     secondary: "#2E9E91",
     text_color: "#FFFFFF",
-    accent: "#2E9E91",
+    accent: "#FFEEDD",
   },
 };
 
