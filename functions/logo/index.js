@@ -4,10 +4,11 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import React, { useEffect } from "react";
-import { COLOR_OPTION, SETTINGS, filterObject } from "../commons";
+import { COLOR_PRESETS, SETTINGS, filterObject } from "../commons";
+
 
 export const handler = ({ inputs, mechanic }) => {
-  const { size, color, profile, inverted } = inputs;
+  const { size, color, accent, profile, inverted } = inputs;
 
   useEffect(() => {
     mechanic.done();
@@ -18,11 +19,11 @@ export const handler = ({ inputs, mechanic }) => {
       width={size}
       height={size}
       viewBox="0 0 240 240"
-      fill={inverted ? color : "#000"}
+      fill={inverted ? color : accent}
       xmlns="http://www.w3.org/2000/svg"
     >
-      {profile && DEFAULT(inverted ? "#000" : color)}
-      {!profile && SQUARED(inverted ? "#000" : color)}
+      {profile && DEFAULT(inverted ? accent : color)}
+      {!profile && SQUARED(inverted ? accent : color)}
     </svg>
   );
 };
@@ -32,15 +33,22 @@ export const inputs = {
     type: "number",
     default: 400,
   },
-  color: COLOR_OPTION,
   profile: {
     type: "boolean",
     default: false,
   },
   inverted: { type: "boolean", default: false },
+  color: { type: "color", model: "hex", default: "#FED", editable: false },
+  accent: {
+    type: "color",
+    model: "hex",
+    default: "#000",
+    editable: false,
+  },
 };
 
-export const settings = { ...SETTINGS, hidePresets: true };
+export const presets = COLOR_PRESETS;
+export const settings = SETTINGS;
 
 const DEFAULT = (color) => (
   <g>
