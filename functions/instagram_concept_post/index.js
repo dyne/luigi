@@ -1,4 +1,4 @@
-import "@fontsource/syne/variable.css";
+import "@fontsource-variable/syne";
 import { COLOR_PRESETS, SETTINGS } from "../commons";
 import React, { useEffect } from "react";
 

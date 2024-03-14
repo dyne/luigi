@@ -8,12 +8,16 @@
     "new": "mechanic new function"
   },
   "dependencies": {
-    "@fontsource/syne": "^4.5.11",
-    "@mechanic-design/cli": "2.0.0-beta.10",
-    "@mechanic-design/core": "2.0.0-beta.10",
+    "@fontsource-variable/syne": "^5.0.19",
+    "@mechanic-design/cli": "2.0.0-beta.11",
+    "@mechanic-design/core": "2.0.0-beta.11",
     "@mechanic-design/engine-react": "^2.0.0-beta.10",
-    "@mechanic-design/engine-svg": "2.0.0-beta.10",
+    "@mechanic-design/engine-svg": "2.0.0-beta.11",
     "@svgdotjs/svg.js": "^3.1.2",
     "react-webcam": "^7.0.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.24.0",
+    "html-loader": "^5.0.0"
   }
 }
