@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import "@fontsource/syne/variable.css";
+import "@fontsource-variable/syne";
 import React, { useEffect, useState } from "react";
 import { COLOR_PRESETS, SETTINGS } from "../commons";
 
