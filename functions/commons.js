@@ -3,6 +3,21 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+export const COLOR_LOGO_PRESETS = {
+  ["Default"]: {
+    color: "#FED",
+    border: false,
+  },
+  ["Transparent"]: {
+    color: "transparent",
+    border: false,
+  },
+  ["White"]: {
+    color: "#FFF",
+    border: true,
+  },
+};
+
 export const COLOR_PRESETS = {
   ["Open source"]: {
     color: "#FFEEDD",
