@@ -191,7 +191,7 @@ export const handler = ({ inputs, mechanic }) => {
             fill="black"
             xmlSpace="preserve"
             style={{ whiteSpace: "pre" }}
-            fontFamily="SyneVariable"
+            fontFamily="Syne Variable"
             fontSize="128"
             fontWeight="600"
             letterSpacing="-0.02em"

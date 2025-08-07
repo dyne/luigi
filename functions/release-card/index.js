@@ -48,7 +48,7 @@ export const handler = ({ inputs, mechanic }) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path fill={color} d="M0 0h1200v675H0z" />
-        <g fill={text_color} fontFamily="SyneVariable">
+        <g fill={text_color} fontFamily="Syne Variable">
           <text
             xmlSpace="preserve"
             style={{ whiteSpace: "pre" }}
@@ -76,7 +76,7 @@ export const handler = ({ inputs, mechanic }) => {
           fill={accent}
           xmlSpace="preserve"
           style={{ whiteSpace: "pre" }}
-          fontFamily="SyneVariable"
+          fontFamily="Syne Variable"
           fontSize={40}
           letterSpacing="-.02em"
         >
@@ -93,7 +93,7 @@ export const handler = ({ inputs, mechanic }) => {
           style={{
             whiteSpace: "pre",
           }}
-          fontFamily="SyneVariable"
+          fontFamily="Syne Variable"
           fontSize={36}
           letterSpacing="-.02em"
         >
@@ -121,7 +121,7 @@ export const handler = ({ inputs, mechanic }) => {
           style={{
             whiteSpace: "pre",
           }}
-          fontFamily="SyneVariable"
+          fontFamily="Syne Variable"
           fontSize={300}
           letterSpacing="0em"
         ></text>

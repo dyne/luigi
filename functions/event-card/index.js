@@ -78,7 +78,7 @@ export const handler = ({ inputs, mechanic }) => {
           fill={color}
           xmlSpace="preserve"
           style={{ whiteSpace: "pre" }}
-          fontFamily="Syne"
+          fontFamily="Syne Variable"
           fontSize="40"
           letterSpacing="-0.02em"
         >
@@ -104,7 +104,7 @@ export const handler = ({ inputs, mechanic }) => {
             fill={color}
             xmlSpace="preserve"
             style={{ whiteSpace: "pre" }}
-            fontFamily="Syne"
+            fontFamily="Syne Variable"
             fontSize="40"
             letterSpacing="-0.02em"
           >
@@ -124,7 +124,7 @@ export const handler = ({ inputs, mechanic }) => {
           fill={text_color}
           xmlSpace="preserve"
           style={{ whiteSpace: "pre" }}
-          fontFamily="Syne"
+          fontFamily="Syne Variable"
           fontSize="24"
           fontWeight="500"
           letterSpacing="-0.02em"
@@ -213,7 +213,7 @@ export const handler = ({ inputs, mechanic }) => {
           fill={text_color}
           xmlSpace="preserve"
           style={{ whiteSpace: "pre" }}
-          fontFamily="Syne"
+          fontFamily="Syne Variable"
           fontSize="48"
           fontWeight="500"
           letterSpacing="0em"
