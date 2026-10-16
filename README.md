@@ -68,13 +68,13 @@ To start using Luigi van der Dyne just https://luigi.dyne.org/
 First, running a command that will ask you a couple of questions to create a new design functions from a base (template, example or blank):
 
 ```
-yarn new
+npm run new
 ```
 Choose
 
 ```
 ❯ Template
-❯ React Image (SVG)
+❯ Adaptive Grid (SVG)
 ```
 And give it a proper name (eg. event_twitter_card, linkedin_banner...), this will be the name of the template asset and the folder in which we now have to work, let's say it's called `listen_to_podcast`
 
@@ -120,14 +120,25 @@ with
 Now in the root project run the server with the following command
 
 ```
-yarn dev
+npm run dev
 ```
 head your browser to http://localhost:3000 so you can already see your new template and to see that in actions
+
+### 3b. Adaptive Grid template
+
+The `adaptive-grid` function is a ready-to-use template that builds a responsive
+column/grid layout whose column count adapts to the canvas aspect ratio
+(1, 2 or 3 columns), with optional random column ratios, colors and a
+randomizable image placement. It is a good example of the new Mechanic 2
+`groupToggle` inputs and the `isPreview` flag exposed to design functions.
+It ships with the Object Sans fonts and a default image under
+[./functions/adaptive-grid](./functions/adaptive-grid).
+
 
 
 ### 4. Define the inputs
 
-Add the control inputs as describe in [add-an-input](https://mechanic.design/docs/v2.0.0-beta.9/#add-an-input) if you have problems with images please refer to this issue https://github.com/designsystemsinternational/mechanic/issues/130 or take inspiration on how I did it on [./functions/event-card/index.js](./functions/event-card/index.js)
+Add the control inputs as describe in [add-an-input](https://mechanic.design/docs/v2.0.0/#add-an-input) if you have problems with images please refer to this issue https://github.com/designsystemsinternational/mechanic/issues/130 or take inspiration on how I did it on [./functions/event-card/index.js](./functions/event-card/index.js)
 
 ### 5. Replace placeholders with inputs
 

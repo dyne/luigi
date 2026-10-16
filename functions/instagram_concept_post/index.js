@@ -2,11 +2,11 @@ import "@fontsource-variable/syne";
 import { COLOR_PRESETS, SETTINGS } from "../commons";
 import React, { useEffect } from "react";
 
-export const handler = ({ inputs, mechanic }) => {
+export const handler = ({ inputs, done }) => {
   const { concept, color, width } = inputs;
 
   useEffect(() => {
-    mechanic.done();
+    done();
   }, []);
 
   return (

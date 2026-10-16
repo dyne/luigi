@@ -6,11 +6,11 @@
 import React, { useEffect } from "react";
 import { COLOR_LOGO_PRESETS, SETTINGS } from "../commons";
 
-export const handler = ({ inputs, mechanic }) => {
+export const handler = ({ inputs, done }) => {
   const { size, color, profile, border } = inputs;
 
   useEffect(() => {
-    mechanic.done();
+    done();
   }, []);
 
   return (

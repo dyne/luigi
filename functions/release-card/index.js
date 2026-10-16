@@ -7,7 +7,7 @@ import "@fontsource-variable/syne";
 import React, { useEffect, useState } from "react";
 import { COLOR_PRESETS, SETTINGS } from "../commons";
 
-export const handler = ({ inputs, mechanic }) => {
+export const handler = ({ inputs, done }) => {
   const {
     color,
     text_color,
@@ -36,7 +36,7 @@ export const handler = ({ inputs, mechanic }) => {
 
   useEffect(() => {
     if (logo) loadImageFromFileObject(logo, setLogoHref);
-    if ((logo && logoHref) || (!logo && !logoHref)) mechanic.done();
+    if ((logo && logoHref) || (!logo && !logoHref)) done();
   }, [logoHref, logo]);
 
   return (

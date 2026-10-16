@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import "@fontsource-variable/syne";
 import { COLOR_PRESETS, SETTINGS } from "../commons";
 
-export const handler = ({ inputs, mechanic }) => {
+export const handler = ({ inputs, done }) => {
   const {
     secondary,
     format,
@@ -45,12 +45,10 @@ export const handler = ({ inputs, mechanic }) => {
       (!first_profile || firstProfileHref) &&
       (!second_profile || secondProfileHref)
     )
-      mechanic.done();
+      done();
   }, [firstProfileHref, first_profile, secondProfileHref, second_profile]);
 
-  //   useEffect(() => {
-  //     if(first_profile && second_profile) mechanic.done();
-  //   }, [first_profile, second_profile, firtsProfileHref, secondProfileHref]);
+
 
   return (
     <svg
